@@ -12,3 +12,5 @@ Sistema para controle de venda, baseado no curso https://www.udemy.com/course/sp
 # Processo
 
 ![Usuário de acesso](https://github.com/thiago-jv/SIS-VENDA-SPRING-BOOT/blob/main/usuario.png)
+
+![token](https://github.com/thiago-jv/SIS-VENDA-SPRING-BOOT/blob/main/token.png)
