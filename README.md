@@ -27,4 +27,6 @@ Sistema para controle de venda, baseado no curso https://www.udemy.com/course/sp
 
 ![insert](https://github.com/thiago-jv/SIS-VENDA-SPRING-BOOT/blob/main/insert.png)
 
+![login-h2](https://github.com/thiago-jv/SIS-VENDA-SPRING-BOOT/blob/main/h2_init.png)
+
 ![h2](https://github.com/thiago-jv/SIS-VENDA-SPRING-BOOT/blob/main/h2.png)
