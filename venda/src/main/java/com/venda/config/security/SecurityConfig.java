@@ -51,6 +51,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                        .hasAnyRole(USER, ADMIN)
                     .antMatchers(HttpMethod.POST, "/v1/usuarios/**")
                        .permitAll()
+                    .antMatchers( "/h2-console/**")
+                        .permitAll()
                     .anyRequest().authenticated()
                 .and()
                     .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -73,6 +75,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 "/swagger-resources/**",
                 "/configuration/security",
                 "/swagger-ui.html",
-                "/webjars/**");
+                "/webjars/**",
+                "/h2-console/**");
     }
 }
