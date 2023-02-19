@@ -1,0 +1,547 @@
+{
+	"info": {
+		"_postman_id": "28480f38-3a42-405f-bcab-4ce10be172dc",
+		"name": "venda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "GET CLIENTE BY ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/venda/v1/clientes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET CLIENTE BY  FILTROS",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/venda/v1/clientes/filtros?nome=Thiago",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"clientes",
+								"filtros"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "Thiago"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST CLIENTE",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1NzgyNDd9.N6qyN2MJtyrT6t9xPBGCVLTs0yKJiOroMjINnLq01BjTxmYNTBN8FjxENILWpwjkraZ3GHVCb89rY0CwPyt8XA",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"thiago henrique\",\r\n    \"cpf\": \"88371468253\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/venda/v1/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CLIENTE",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/venda/v1/clientes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT CLIENTE",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"thiago henrique Melo da Silva\",\r\n    \"cpf\": \"88371468253\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/venda/v1/clientes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "produto",
+			"item": [
+				{
+					"name": "GET PRODUTO BY ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/venda/v1/produtos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PRODUTO BY  FILTROS",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/venda/v1/produtos/filtros?descricao=pc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"produtos",
+								"filtros"
+							],
+							"query": [
+								{
+									"key": "descricao",
+									"value": "pc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST PRODUTO",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"pc\",\r\n    \"preco\": \"2000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/venda/v1/produtos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE PRODUTO",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/venda/v1/produtos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT PRODUTO",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"pc\",\r\n    \"preco\": \"20000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/venda/v1/produtos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pedido",
+			"item": [
+				{
+					"name": "POST PEDIDO",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": 1,\r\n    \"total\": 100,\r\n    \"items\": [\r\n        {\r\n           \"produto\": 2,\r\n           \"quantidade\": 10\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/venda/v1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET PEDIDO BY ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Au",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/venda/v1/pedidos/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"pedidos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH BY ID",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aGlhZ28iLCJleHAiOjE2NzY1Nzg1ODl9.Cxow-VK-aXTH5Aae9e8MpTe3raqfdV76Q2UfXVXvi__2f6xBZKqXF5LhZ6y9e9pjd50_ATcj3uWZeAYVCToDAw",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/venda/v1/pedidos/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"pedidos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "POST USUARIO",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "thiago",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": \"thiago\",\r\n    \"senha\": \"123\",\r\n    \"admin\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/venda/v1/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET TOKEN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": \"thiago\",\r\n    \"senha\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/venda/v1/usuarios/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"venda",
+								"v1",
+								"usuarios",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
